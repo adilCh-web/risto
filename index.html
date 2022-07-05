@@ -9,51 +9,62 @@
     
 </head>
 <body>
-    <h1>Risto<span>Betting</span> Data</h1>
-    <p class="dev">made By AdilCh</p>
-    <div class="container">
-        <div>
-            <label><input type="number" id="invest" required> Invest</label>
+    <div id="container">
+        <caption>
+            <img src="./BET_logo.png" alt="logo">
+            <figcaption>
+                <h2>Risto<span>Betting</span>Data</h2>
+                <p class="dev">made By AdilCh</p>
+            </figcaption>
+        </caption>
+
+        <div class="form">
+            <hr>
+            <div>
+                <label><input type="number" id="invest" required> Invest</label>
+            </div>
+            <div>
+                <label><input type="number" id="return" required> Revenue</label>
+            </div>
+            <hr>
+            <div>
+                <button id="s">Store the Data</button>
+            </div>
         </div>
-        <div>
-            <label><input type="number" id="return" required> Revenue</label>
-        </div>
-        <div>
-            <button id="s">Store the Data</button>
-        </div>
-    </div>
 
-    <table id="data">
-        <tr>
+   
 
-            <th>Time </th>
-            <th>Invest</th>
-            <th>Return</th>
-            <th>Profit</th>
-            
-            
-        </tr>
+        <table id="data">
+            <tr>
 
- 
-    </table>
-    <table id="insight">
-        <tr>
-
-            <th> - </th>
-            <th>Total</th>
-            <th>Total</th>
-            <th>Avg Profit</th>
-        </tr>
-        <tr>
-      
-            <td>-</td>
-            <td id = "tInvest">£0</td>
-            <td id="tReturn">£0</td>
-            <td id ="avgProfit">£0</td>
-        </tr>
-    </table>
+                <th>Time </th>
+                <th>Invest</th>
+                <th>Return</th>
+                <th>Profit</th>
+                
+                
+            </tr>
 
     
+        </table>
+        <table id="insight">
+            <tr>
+
+                <th> - </th>
+                <th>Total</th>
+                <th>Total</th>
+                <th>Avg Profit</th>
+            </tr>
+            <tr>
+        
+                <td>-</td>
+                <td id = "tInvest">£0</td>
+                <td id="tReturn">£0</td>
+                <td id ="avgProfit">0%</td>
+            </tr>
+        </table>
+
+</div>  
 </body>
 <script src="javas.js"></script>
 </html>

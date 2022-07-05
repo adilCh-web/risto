@@ -52,6 +52,22 @@ function updateData()
     avgProfit=avgProfit/tProfit.length
     document.getElementById("tInvest").innerHTML="£"+totalInvest
     document.getElementById("tReturn").innerHTML="£"+totalReturn
-    document.getElementById("avgProfit").innerHTML="£"+avgProfit
+    let avg = 100*avgProfit/totalInvest
+    if(avg - Math.floor(avg) !== 0)
+    {
+        document.getElementById("avgProfit").innerHTML=avg.toFixed(2)+"%"
+    }
+    else
+    {
+    document.getElementById("avgProfit").innerHTML=avg+"%"
+    }
+    if(avg <0)
+    {
+        document.getElementById("avgProfit").style.color="red"
+    }
+    else
+    {
+        document.getElementById("avgProfit").style.color="green"
+    }
 
 }
