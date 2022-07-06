@@ -11,21 +11,31 @@
 <body>
     <div id="container">
         <caption>
-            <img src="./BET_logo.png" alt="logo">
+            <img src="./Online_trading_stock-1024.webp" alt="logo">
             <figcaption>
-                <h2>Risto<span>Betting</span>Data</h2>
+                <h2>Risto<span>Trading</span>Data</h2>
                 <p class="dev">made By AdilCh</p>
             </figcaption>
         </caption>
 
         <div class="form">
             <hr>
-            <div>
-                <label><input type="number" id="invest" required> Invest</label>
+            <div class="flex">
+                <div>
+                    <div>
+                        <label><input type="number" id="invest" required> Invest</label>
+                    </div>
+                    <div>
+                        <label><input type="number" id="return" required> Revenue</label>
+                    </div>
+                </div>
+                <div id="profitDiv">
+                    <label >Total Profit:</label>
+                    <label id="totalProfit">£0</label>
+                </div>
+
             </div>
-            <div>
-                <label><input type="number" id="return" required> Revenue</label>
-            </div>
+
             <hr>
             <div>
                 <button id="s">Store the Data</button>
