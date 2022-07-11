@@ -132,12 +132,13 @@ function deleteDb()
 
 function loadData()
 {
+    
     dataTable.style.display = "block";
     insightTable.style.display ="block";
     insightTable.style.margin = "auto auto";
     dataTable.style.margin = "auto auto";
     dataTable.style.width ="280px"
-    insightTable.style.width ="300px"
+    insightTable.style.width ="280px"
 
     document.getElementById("first").style.display="none"
     document.getElementById("second").style.display="none"
@@ -174,6 +175,7 @@ if (typeof db.collection("invest") !== "undefined")
         
     }, 1000);  
 }
+document.getElementById("load").disabled = true
 }
 
 
@@ -278,4 +280,5 @@ function loadGraph()
             }
           }
         });
+        document.getElementById("load").disabled = false;
 }
