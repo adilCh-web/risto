@@ -14,9 +14,11 @@
 
 img
 {
-    width:90%;
-
+    width:80%;
+    display:block;
+    margin:20px auto 0px auto;
 }
+
 
 #container
 {
@@ -38,10 +40,9 @@ body
 input
 {
     font-size: 25px;
-    width:50px;
+    width:100px;
     color:brown;
     font-weight: 700;
-
 }
 
 table tr
@@ -50,22 +51,23 @@ table tr
 }
 table th, table td
 {
-    padding:5px 10px;
+    padding:5px 0px;
     border-bottom: 1px solid ;
-    width:70px;
+    width:85px;
     text-align:center
 }
 table
 {
     margin: auto auto;
     border:2px solid brown;
+    min-width:280px;
     
 }
 #insight
 {
     background-color: rgb(209, 194, 194);
     color:black;
-  
+    margin-bottom: 30px;
 }
 
 
@@ -77,12 +79,18 @@ button
 {
     margin: auto auto;
     display:block;
-    padding:5px;
+    padding:10px;
     border:none;
     background-color: brown;
     color:white;
     border-radius: 15px;
     margin-bottom: 30px;
+   
+}
+
+#s:active
+{
+    background-color: black;
 }
 
 hr
@@ -109,8 +117,9 @@ h2
     font-size:10px;
     padding-bottom:20px;
     font-weight: 800;
-    margin-top:-5px;
+    margin-top:-7px;
     text-align:center;
+
 }
 
 
@@ -121,24 +130,43 @@ h2
     justify-content: space-around;
 }
 
-#profitDiv
+
+
+#totalProfit,#treturn,#tProfit,#avgProfit
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#navHeading ul
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  
-
+    width:100%;
+    justify-content: space-around;
+    background-color: black;
+    margin:0px auto;
+    padding:5px;
+    border-radius: 15px;
+    border:3px solid brown
 }
-#profitDiv label
+#navHeading ul button
 {
-    display:block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    padding:5px;
+    margin:0px;
+    background-color:black;
+    color:white;
+    border: none;
 }
 
-#totalProfit
+
+#navHeading button:hover
 {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    background-color: brown;
+}
+
+
+#first,#second
+{
+    min-width:280px;
+    min-height: 200px;
 }
