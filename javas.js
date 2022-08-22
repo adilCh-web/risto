@@ -91,8 +91,8 @@ function updateData()
     totalProfit = totalProfit + Number(tReturn[i].innerHTML)-Number(tInvest[i].innerHTML)
     }
     avgProfit=avgProfit/tProfit.length
-    document.getElementById("tInvest").innerHTML="£"+totalInvest
-    document.getElementById("tReturn").innerHTML="£"+totalReturn
+    document.getElementById("tInvest").innerHTML="£"+totalInvest.toFixed(2)
+    document.getElementById("tReturn").innerHTML="£"+totalReturn.toFixed(2)
     if(avgProfit - Math.floor(avgProfit) !== 0)
     {
         document.getElementById("avgProfit").innerHTML=avgProfit.toFixed(2)+"%"
@@ -110,7 +110,7 @@ function updateData()
         document.getElementById("avgProfit").style.color="green"
     }
 
-    document.getElementById("totalProfit").innerHTML="£"+totalProfit
+    document.getElementById("totalProfit").innerHTML="£"+totalProfit.toFixed(2)
     if(totalProfit>0)
     {
         document.getElementById("totalProfit").style.color="green"
